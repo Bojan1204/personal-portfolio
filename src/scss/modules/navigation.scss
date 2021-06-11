@@ -1,0 +1,120 @@
+.site-navbar {
+    width: 90%;
+    position: absolute;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    z-index: 3;
+    transition: 0.5s all ease-in-out;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    ul li a {
+        color: #fff;
+        padding: 20px;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+
+.addResizeNavigation {
+    padding: 5px 100px;
+    background-color: #161D28;
+
+}
+
+.nav-toggler {
+    border: 3px solid #fff;
+    margin: 5px 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
+
+    span,
+    span::before,
+    span::after {
+        width: 28px;
+        height: 3px;
+        background-color: #fff;
+        display: block;
+        transition: 0.3s;
+    }
+
+    span:before {
+        content: "";
+        transform: translateY(-9px);
+    }
+
+    span:after {
+        content: "";
+        transform: translateY(6px);
+    }
+}
+
+.toggler-open span {
+    background-color: transparent;
+}
+.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+}
+.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+}
+
+
+@include breakpoint(sm-max) {
+    .site-navbar {
+        width: 100%;
+        min-height: 60px;
+        ul {
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 60px);
+            left: 0;
+            top: 60px;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.75);
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        ul li {
+            width: 100%;
+            text-align: center;
+
+            a {
+                padding: 25px;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+
+        ul.open {
+            max-height: 100vh;
+            overflow: visible;
+            position: fixed;
+            top: 0;
+            padding-top: 50px;
+        }
+
+        .nav-toggler {
+            display: block;
+        }
+    }
+}

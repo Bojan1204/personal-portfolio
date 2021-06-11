@@ -1,0 +1,123 @@
+// .skills{
+    // display: flex;
+    // justify-content: center;
+    // margin: 200px 0;
+    // @include breakpoint(sm-max) {
+    //     margin: 100px 0;
+            
+    //     }
+    
+    .skills-box{
+        width: 100%;
+         padding: 80px 0;
+         margin-top: 100px;
+         position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #1E242E;
+        span{
+            font-size: 26px;
+        }
+        
+        h3{
+            font-size: 44px;
+            letter-spacing: 5px;
+            position: absolute;
+            top: -1.7em;
+            color: #A5A7AB;
+            text-transform: uppercase;
+            @include breakpoint(sm-max) {
+                font-size: 32px;
+                position: absolute;
+                top: -1.7em;
+                left: unset;
+            }
+        }
+            .skill-btn{
+                width: 30%;
+                width: 600px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-evenly;
+                border: 1px solid;
+                margin: 10px;
+                border-radius: 10px;
+                padding: 20px 0;
+                transition: 0.2s ease-in-out;
+                cursor: pointer;
+
+                &:hover{
+                    transform: translateY(-1px);
+                    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                    // background: #ffffff08;
+                     background: #161d2885;
+                }
+
+            }
+
+            .html{
+                text-transform: uppercase;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    
+                }
+            }
+            .css{
+                text-transform: uppercase;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    
+                }
+            }
+            .sass{
+                text-transform: uppercase;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    
+                }
+            }
+            .xd{
+                img{
+                    width: 80px;
+                    height: 80px;
+                    
+                }
+            }
+
+            .bost4{
+               img{
+                width: 80px;
+                height: 80px;
+               }
+            }
+
+
+    
+          span{
+              color: #fff;
+          }
+    
+          img{
+            width: 70px;
+            height: 70px;
+            
+        }
+        
+       
+
+
+
+    }  //end skill-box
+
+
+
+
+
+// }
+
+

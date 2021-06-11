@@ -1,0 +1,46 @@
+// ==========================================================================
+// $FONT-FACE
+// ==========================================================================
+
+@if variable-exists(google-fonts-url) {
+    @import url($google-fonts-url);
+  }
+
+  @if variable-exists(typefaces) {
+    @each $file, $option in $typefaces {
+      @font-face {
+        font-family: map-get(map-get($typefaces, $file), family);
+        font-style: map-get(map-get($typefaces, $file), style);
+        font-weight: map-get(map-get($typefaces, $file), weight);
+        src: url('../fonts/#{$file}.woff') format('woff'),
+               
+      }
+    }
+  }
+
+  @font-face {
+    font-family: 'Calibri';
+    src:  url('../fonts/Calibri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Raleway-Black';
+  src: url('../fonts/Raleway-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('../fonts/Raleway-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

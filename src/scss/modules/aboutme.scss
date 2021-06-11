@@ -1,0 +1,96 @@
+.container{
+    margin: 0 100px;
+
+    @include breakpoint(sm-max) {
+        margin: 0 25px;
+    }
+}
+
+
+.aboutme {
+    justify-content: center;
+    flex-wrap: wrap;
+//     flex-grow: 1;
+//   flex-shrink: 1;
+//   flex-basis: 1;
+    
+    // @include breakpoint(sm-max) {
+    //     margin: 100px 0;
+            
+    //     }
+
+    .box {
+        width: 100%;
+        margin-top: 150px;
+        display: flex;
+        padding: 80px ;
+        margin-bottom: 100px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border: 1px solid white;
+        background-color: #1e242e;
+
+        @include breakpoint(sm-max) {
+            margin: 100px 0;
+            
+        }
+
+        @include breakpoint(sm-max) {
+            padding: 60px 0;
+        }
+
+        .box-aboutme{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        h3 {
+            font-size: 44px;
+            letter-spacing: 5px;
+            color: #a5a7ab;
+            text-transform: uppercase;
+
+            @include breakpoint(sm-max) {
+                font-size: 32px;
+            }
+           
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            font-size: 26px;
+            padding: 0 15px;
+           
+        }
+
+        .my-image {
+            overflow: hidden;
+            // width: 300px;
+            // height: 300px;
+            padding: 0 10px;
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 0 15px;
+            margin-top: 25px;
+            
+            @include breakpoint(sm-max) {
+                padding: 0 20px;
+            }
+
+            
+            // @include breakpoint(sm-max) {
+            //     font-size: 32px;
+            //     position: absolute;
+            //     top: -1.7em;
+            //     left: unset;
+            // }
+        }
+    }
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Personal | Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="preload" as="font" href="assets/fonts/Raleway-Black.woff" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Raleway-Medium.woff" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Calibri.woff" type="font/woff" crossorigin="anonymous">
+    <meta
+      name="description"
+      content="This is my personal Portfolio"
+    />
+    <meta name="Keywords" content="Personal Portfolio, Webpack" />
+    <meta name="author" content="Bojan Bosnic" />
+
+    <!-- CSS style will be added automatically after build, dont add here any style -->
+  </head>
+
+  <body>
+
+    <nav class="site-navbar">
+      <ul>
+        <li><a href="home" class="nav-link">Home</a></li>
+        <li><a href="aboutme" class="nav-link">About Me</a></li>
+        <li><a href="projects" class="nav-link">Projects</a></li>
+        <li><a href="contact" class="nav-link">Contact</a></li>
+      </ul>
+
+
+      <button class="nav-toggler">
+        <span></span>
+      </button>
+    </nav>
+    <header id="home" class="header view">
+ 
+      <div  class="header-main ">
+        <div class="header-main_content">
+          <h1>
+            Hi there,<br />I'm junior Web Developer<br />Who's searching for a
+            good internship
+          </h1>
+          <h2>This is my personal portfolio, welcome and enjoy</h2>
+            <a href="./pdf/Bojan-Bosnic-CV.pdf" target="_blank" class="header-button"> Download my CV </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container ">
+      <section id="aboutme" class="aboutme view">
+        <div class="box">
+          <div class="box-aboutme">
+            <h3>About Me</h3>
+            <p>
+              Hello, my name is Bojan Bosnic, I live in 
+              Gradiska, Bosnia and Herzegovina. I'm creative and 
+              diligent and I want to become web developer. 
+              I worked with UI/UX design and JavaScript. 
+               I'm learning React.
+            </p>
+            <img class="my-image" src="./img/my-pic.jpg" alt="bojan's-picture" />
+          </div>
+      
+          <div class="skills-box">
+            <h3> My Skills</h3>
+            <div class="skill-btn html">
+              <img src="./img/html5.png" alt="html-pic" />
+              <span>Html5</span>
+            </div>
+  
+            <div class="skill-btn css">
+              <img src="./img/css3.png" alt="css-pic" />
+              <span>Css3</span>
+            </div>
+  
+            <div class="skill-btn sass">
+              <img src="./img/sasss.png" alt="sass-pic" />
+              <span>Sass</span>
+            </div>
+  
+            <div class="skill-btn js">
+              <img src="./img/javascript.png" alt="javascript-pic" />
+              <span>JavaScript</span>
+            </div>
+  
+            <div class="skill-btn xd">
+              <img src="./img/adobe-xd.png" alt="adobexd-pic" />
+              <span>Adobe XD</span>
+            </div>
+  
+            <div class="skill-btn bost4">
+              <img src="./img/bootstrap4.png" alt="bootstrap4-pic" />
+              <span>Bootstrap 4</span>
+            </div>
+  
+            <div class="skill-btn ps">
+              <img src="./img/photshop.png" alt="photoshop-pic" />
+              <span>Adobe Photoshop</span>
+            </div>
+          </div>
+        </div>
+    </section>
+    </div>
+
+    <section id="projects" class="projects view">
+      <div class="container">
+        <div class="project-heading">
+          <h3>Projects</h3>
+          <p>In cards below you can see my projects</p>
+        </div>
+        <div class="project-wrapper">
+            <div class="js-projects-card">
+              <div class="vanilla-js-img">
+                <img src="./img/vanilla.png" alt="vanilla-js-icon">
+              </div>
+              <div class="projects-heading">
+
+                <h3>.js web applications</h3>
+              </div>
+            </div>
+          
+            <div class="landingPages-projects-card">
+              <div class="landing-pages-img">
+                <img src="./img/webpage.png" alt="web-page-icon">
+              </div>
+              <div class="projects-heading ladning-page-heading">
+                <h3>landing pages</h3>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal-bg">
+          <div class="modal-body">
+            <div class="modal-header">
+              
+              <h4>This web apps was created in Vanilla JS</h4>
+            </div>
+            <div class="modal-content">
+              <div class="weather-img">
+                <!-- <img src="./img/weather.jpg" alt="weather-app-icon"> -->
+                <div class="project-hover">
+                  <div class="content-hover">
+                    <a class="modal-button" href="#">Visit App ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="weather-img">
+                <!-- <img src="./img/weather.jpg" alt="weather-app-icon"> -->
+                <div class="project-hover">
+                  <div class="content-hover">
+                    <a class="modal-button" href="#">Visit App ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="close-modal">close</span>
+          </div>
+        </div>
+   <!-- second modal below  -->
+        <div class="modal-ladning-bg">
+          <div class="modal-landing-body">
+            <div class="modal-landing-header">
+              
+              <h4>This landing pages was created in html,sass,bootstrap4</h4>
+            </div>
+            <div class="modal-landing-content">
+              <div class="landing-img project1">
+                <!-- <img src="./img/weather.jpg" alt="weather-app-icon"> -->
+                <div class="landing-project-hover">
+                  <div class="landing-content-hover">
+                    <a class="landing-modal-button" href="https://newlandingpage1.netlify.app/" target="_blank">Visit App ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="landing-img project2">
+                <!-- <img src="./img/weather.jpg" alt="weather-app-icon"> -->
+                <div class="landing-project-hover">
+                  <div class="landing-content-hover">
+                    <a class="landing-modal-button" href="https://awesomeapp-project.netlify.app/" target="_blank">Visit App ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="landing-img project3">
+                <!-- <img src="./img/weather.jpg" alt="weather-app-icon"> -->
+                <div class="landing-project-hover">
+                  <div class="landing-content-hover">
+                    <a class="landing-modal-button" href="https://project-scss.netlify.app/" target="_blank">Visit App ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="landing-img project4">
+                <!-- <img src="./img/weather.jpg" alt="weather-app-icon"> -->
+                <div class="landing-project-hover">
+                  <div class="landing-content-hover">
+                    <a class="landing-modal-button" href="https://simple-scss-page.netlify.app/" target="_blank">Visit App ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="landing-close-modal">close</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="footer view">
+      <div class="container">
+        <div class="footer-text">
+          <h3>Contact Me</h3>
+          <p>If I got your attention contact me below</p>
+          
+        </div>
+
+        <div class="footer-buttons">
+          <a
+            href="mailto:bojan.bosnicc99@gmail.com"
+            class="footer-btn"
+            target="_blank"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://github.com/Bojan1204"
+            class="footer-btn"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/bojan-bosnic-6059b91bb/"
+            class="footer-btn"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/bojanbosnic1204/"
+            class="footer-btn"
+            target="_blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="copyright">
+      <p>© Bojan Bosnic | 2021</p>
+    </footer>
+
+    <!-- Javascript will be added automatically after build -->
+  </body>
+</html>
