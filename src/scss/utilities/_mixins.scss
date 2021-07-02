@@ -71,6 +71,9 @@
     @else if $media == lg {
       @media only screen and (min-width: $screen-lg-min) { @content; }
     }
+    @else if $media == lg-max {
+      @media only screen and (max-width: $screen-lg-max) { @content; }
+    }
     @else if $media == xl {
       @media only screen and (min-width: $screen-xl-min) { @content; }
     }

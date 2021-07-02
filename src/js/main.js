@@ -77,8 +77,8 @@ window.onscroll = () => {
 
 
 
-const jsProjectBtn = document.querySelector('.js-projects-card');
-const landingpagesBtn = document.querySelector('.landingPages-projects-card');
+const jsProjectBtn = document.querySelector('.card-front');
+const landingpagesBtn = document.querySelector('.project2');
 const closeModal = document.querySelector('.close-modal');
 const secondcloseModal = document.querySelector('.landing-close-modal');
 const modal = document.querySelector('.modal-bg');
