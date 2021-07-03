@@ -24,9 +24,9 @@
     }
 
     .container {
-        max-width: 800px;
+        max-width: 1200px;
         margin: 0 auto;
-
+        
 
         .project-heading{
             text-align: center;
@@ -168,8 +168,7 @@
                     align-items: center;
                     flex-wrap: wrap;
                     padding: 20px;
-
-                    .weather-img {
+                    .weather-img{
                         width: 300px;
                         height: 300px;
                         margin: 10px;
@@ -178,6 +177,19 @@
                         background-image: url("../img/weather.jpg");
                         background-position: center;
                         background-size: cover;
+                    }
+                    .food-img{
+                        width: 300px;
+                        height: 300px;
+                        margin: 10px;
+                        position: relative;
+                        border: 1px solid #fff;
+                        background-image: url("../img/food.jpg");
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    .content-img {
+           
 
                         &:hover {
                             .project-hover {
