@@ -1,29 +1,109 @@
 
-const allLinks = document.querySelectorAll('.nav-link')
-const views = document.querySelectorAll('.view')
+// const allLinks = document.querySelectorAll('.nav-link')
+// const views = document.querySelectorAll('.view')
 
 
 
-for (let i = 0; i < allLinks.length; i++) {
+// for (let i = 0; i < allLinks.length; i++) {
 
-  allLinks[i].addEventListener('click', showView)
+//   allLinks[i].addEventListener('click', showView)
 
-}
-
-
+// }
 
 
-function showView(e) {
-e.preventDefault();
-for (let i = 0; i < views.length; i++) {
 
-      views[i].style.display = 'none'
-}
 
-const id = `#${this.getAttribute("href")}`;
-document.querySelector(id).style.display = "flex";
+// function showView(e) {
+// e.preventDefault();
+// for (let i = 0; i < views.length; i++) {
 
-}
+//       views[i].style.display = 'none'
+// }
+
+// const id = `#${this.getAttribute("href")}`;
+// document.querySelector(id).style.display = "flex";
+
+// }
+
+
+
+
+
+
+
+
+
+
+const  homeBtn= document.querySelector('[href="home"]')
+const  aboutBtn = document.querySelector('[href="aboutme"]')
+const  projectsBtn= document.querySelector('[href="projects"]')
+const  contactBtn= document.querySelector('[href="contact"]')
+
+
+const  homeView= document.querySelector('#home')
+const  aboutView = document.querySelector('#aboutme')
+const  projectsView = document.querySelector('#projects')
+const contactView = document.querySelector('#contact')
+
+
+
+
+
+aboutBtn.addEventListener('click', (e)=>{
+  e.preventDefault()
+  aboutView.style.display = "flex";
+  homeView.style.display = "none";
+  projectsView.style.display = "none";
+  contactView.style.display = "none";
+  
+
+})
+
+homeBtn.addEventListener('click', (e)=>{
+  e.preventDefault()
+  homeView.style.display = "flex";
+  aboutView.style.display = "none";
+  projectsView.style.display = "none";
+  contactView.style.display = "none";
+  
+
+})
+
+projectsBtn.addEventListener('click', (e)=>{
+  e.preventDefault()
+  projectsView.style.display = "block";
+  homeView.style.display = "none";
+  aboutView.style.display = "none";
+  contactView.style.display = "none";
+  
+
+})
+
+contactBtn.addEventListener('click', (e)=>{
+  e.preventDefault()
+  contactView.style.display = "flex";
+  projectsView.style.display = "none";
+  homeView.style.display = "none";
+  aboutView.style.display = "none";
+  
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
